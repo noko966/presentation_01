@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- SLIDE 1 -->
+			<section>
+				<h1>Web Graphics Library</h1>
+				<p>
+					Rasterization engine.
+					It draws points, lines, and triangles based on code you supply.
+				</p>
+				<img class="wgl" src="media/1/webgl.jpg" alt="">
+			</section>
+
+
+			<!-- SLIDE 2 -->
+			<section>
+				<h1>Rasterisation</h1>
+				<p>
+
+				</p>
+				<img class="wgl" src="media/2/rasterisation.png" alt="">
+			</section>
+
+
+			<!-- SLIDE 3 -->
+			<section>
+				<h1>GLSL</h1>
+				<p>
+					(OpenGL Shading Language)
+				</p>
+				<img class="wgl" src="media/3/vertex.jpg" alt="">
+			</section>
+
+
+			<!-- SLIDE 4 -->
+			<section>
+				<section>
+					<h1>Vertex Shader</h1>
+					<img class="wgl" src="media/4/v1.jpg" alt="">
+				</section>
+				<section>
+					<h1>Clip space coordinates</h1>
+					<img class="wgl" src="media/4/1.png" alt="">
+				</section>
+				<section>
+					<h1>Fragment Shader</h1>
+					<img class="wgl" src="media/4/f1.jpg" alt="">
+				</section>
+				<section>
+					<h1>Fragment Shader</h1>
+					<img class="wgl" src="media/4/fragment.png" alt="">
+				</section>
+				<section>
+					<ul class="list">
+						<li>Attributes and Buffers</li>
+						<li>Uniforms</li>
+						<li>Textures</li>
+						<li>Varyings</li>
+					</ul>
+				</section>
+			</section>
+
+
+			<!-- SLIDE 5 -->
+			<section>
+				<section>
+					<h1>THREE JS</h1>
+					<img class="wgl" src="media/5/three.png" alt="">
+				</section>
+				<section>
+					<p>To actually be able to display anything with three.js, we need three things: scene, camera and renderer, so that we can render the scene with camera.</p>
+					<img class="wgl" src="media/5/three_basics.png" alt="">
+				</section>
+
+				<section>
+					<p>making plane mesh</p>
+					<img class="wgl" src="media/5/three_plae.png" alt="">
+				</section>
+			</section>
+
+
+			<!-- SLIDE 6 -->
+			<section>
+				<h1>10 x 10 Plane</h1>
+				<video loop data-autoplay src="./media/6/plane_mesh.mp4"></video>
+			</section>
+
+
+			<!-- SLIDE 6.5 -->
+			<section>
+				<section>
+					<h1>Vertex shader</h1>
+					<img class="wgl" src="media/6/vertex.png" alt="">
+				</section>
+				<section>
+					<h1>Fragment shader</h1>
+					<img class="wgl" src="media/6/fragment.png" alt="">
+				</section>
+				<section>
+					<h1>Value Noise</h1>
+					<img class="wgl" src="media/6/canc.png" alt="">
+				</section>
+			</section>
+
+
+			<!-- SLIDE 7 -->
+			<section>
+				<section>
+					<h1>red</h1>
+					<img class="wgl" src="media/7/1.png" alt="">
+					<img class="wgl" src="media/7/1_1.png" alt="">
+				</section>
+				<section>
+					<h1>green</h1>
+					<img class="wgl" src="media/7/2.png" alt="">
+					<img class="wgl" src="media/7/2_2.png" alt="">
+				</section>
+				<section>
+					<h1>blue</h1>
+					<img class="wgl" src="media/7/3.png" alt="">
+					<img class="wgl" src="media/7/3_3.png" alt="">
+				</section>
+				<section>
+					<h1>white</h1>
+					<img class="wgl" src="media/7/4.png" alt="">
+					<img class="wgl" src="media/7/4_4.png" alt="">
+				</section>
+				<section>
+					<h1>if value is > than 1</h1>
+					<img class="wgl" src="media/7/5.png" alt="">
+					<img class="wgl" src="media/7/5_5.png" alt="">
+				</section>
+				<section>
+					<h1>UV coordinate X</h1>
+					<img class="wgl" src="media/7/8.png" alt="">
+					<img class="wgl" src="media/7/8_8.png" alt="">
+				</section>
+				<section>
+					<h1>UV coordinate Y</h1>
+					<img class="wgl" src="media/7/9.png" alt="">
+					<img class="wgl" src="media/7/9_9.png" alt="">
+				</section>
+				
+			</section>
+
+
+
+			<!-- SLIDE 8 -->
+			<section>
+				<section>
+					<h1>Random</h1>
+					<img class="wgl" src="media/8/rng1.png" alt="">
+				</section>
+				<section>
+					<h1>Random UV.X</h1>
+					<img class="wgl" src="media/8/rngX.png" alt="">
+				</section>
+				<section>
+					<h1>Random UV.XY</h1>
+					<img class="wgl" src="media/8/rngXY.png" alt="">
+				</section>
+				<section>
+					<h1>lets make separate RNG function</h1>
+					<img class="wgl" src="media/8/rngFunction.png" alt="">
+				</section>
+				<section>
+					<h1>We need to know noise value for this points</h1>
+					<img class="wgl" src="media/8/noise_points.png" alt="">
+				</section>
+				
+			</section>
+
+
+
+			<!-- SLIDE 9 -->
+			<section>
+				<section>
+					<h1>easier to work with</h1>
+					<img class="wgl" src="media/10/1.png" alt="">
+				</section>
+				<section>
+					<h1>ID</h1>
+					<img class="wgl" src="media/10/floor.png" alt="">
+				</section>
+				<section>
+					<h1>ID</h1>
+					<img class="wgl" src="media/10/id.png" alt="">
+				</section>
+				<section>
+					<h1>ID</h1>
+					<img class="wgl" src="media/10/id_2.png" alt="">
+				</section>
+			</section>
+
+
+			<!-- SLIDE 10 -->
+			<section>
+				<section>
+					<h1>Bot. Left and Bot. Right</h1>
+					<img class="wgl" src="media/10/blbr.png" alt="">
+				</section>
+				<section>
+					<h1>MIX</h1>
+					<img class="wgl" src="media/10/mix.png" alt="">
+				</section>
+				<section>
+					<h1>Last argument = 0</h1>
+					<img class="wgl" src="media/10/mix_1.png" alt="">
+					<img class="wgl" src="media/10/mix_11.png" alt="">
+				</section>
+				<section>
+					<h1>Last argument = 1</h1>
+					<img class="wgl" src="media/10/mix_2.png" alt="">
+					<img class="wgl" src="media/10/mix_22.png" alt="">
+				</section>
+				<section>
+					<h1>Last argument = 0.5</h1>
+					<img class="wgl" src="media/10/mix_3.png" alt="">
+					<img class="wgl" src="media/10/mix_33.png" alt="">
+				</section>
+				<section>
+					<h1>Last argument = uv.x</h1>
+					<img class="wgl" src="media/10/mix_4.png" alt="">
+					<img class="wgl" src="media/10/mix_44.png" alt="">
+				</section>
+				<section>
+					<h1>mix bl with br</h1>
+					<img class="wgl" src="media/10/blbr_mix.png" alt="">
+				</section>
+				<section>
+					<h1>split uv coordinates</h1>
+					<img class="wgl" src="media/10/grid_1.png" alt="">
+				</section>
+				<section>
+					<div>
+						<img class="wgl" src="media/10/grid_11.png" alt="">
+					</div>
+					<img class="wgl" src="media/10/grid_2.png" alt="">
+				</section>
+				<section>
+					<h2>mix bot left with bot right based on splitUV.x</h2>
+					<img class="wgl" src="media/10/grid_3.png" alt="">
+				</section>
+				<section>
+					<h2>the result</h2>
+					<img class="wgl" src="media/10/mix_b.png" alt="">
+				</section>
+				<section>
+					<h2>mix bot with top based on splitUV.y</h2>
+					<img class="wgl" src="media/10/mix_code_1.png" alt="">
+				</section>
+				<section>
+					<h2>the result</h2>
+					<img class="wgl" src="media/10/noise_f_1.png" alt="">
+				</section>
+				<section>
+					<h2>make grid bigger</h2>
+					<img class="wgl" src="media/10/noise_f_2.png" alt="">
+					<img class="wgl" src="media/10/noise_f_3.png" alt="">
+				</section>
+				
+			</section>
+	
+
+
+			<!-- SLIDE 12 -->
+			<section>
+				<section>
+					<h3>move logick to separate function</h3>
+					<img class="wgl" src="media/11/1.png" alt="">
+				</section>
+				<section>
+					<img class="wgl" src="media/11/2.png" alt="">
+					<img class="wgl" src="media/11/3.png" alt="">
+				</section>
+			</section>
+
+
+			<!-- SLIDE 13 -->
+			<section>
+				<section>
+					<h3>use it to create fractal noise</h3>
+					<img class="wgl" src="media/13/noise_funtion_usage.png" alt="">
+				</section>
+				<section>
+					<h3>final result</h3>
+					<img class="wgl" src="media/13/final_noise.png" alt="">
+				</section>
+				<section>
+					<img class="wgl" src="media/13/move_to_vert_1.png" alt="">
+				</section>
+				<section>
+					<h3>move it to Vertex Shader</h3>
+					<img class="wgl" src="media/13/vert_0.png" alt="">
+				</section>
+				<section>
+					<h3>result</h3>
+					<img class="wgl" src="media/13/vert_1.png" alt="">
+				</section>
+				<section>
+					<div>
+						<img class="wgl" src="media/13/time.png" alt="">
+					</div>
+				</section>
+				<section>
+					<h3></h3>
+					<video loop data-autoplay src="./media/13/vid.mp4"></video>
+				</section>
+			</section>
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
